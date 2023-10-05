@@ -7,7 +7,7 @@ public class ContaCorrente2 {
     // operação de saque e taxa
     public double operacao(){
         saldo = deposito - saque;
-        taxado = saldo - saldo * 0.005;
+        taxado = saldo - (saque * 0.005);
         return taxado;
     }
     // valor do saldo após o saque (já taxado)
